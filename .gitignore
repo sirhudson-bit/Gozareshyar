@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build / cache
+dist/
+.cache/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Secrets / local config
+.env
+.env.*
+*.local
+keys/

@@ -1,0 +1,301 @@
+{
+  "app": "gozaresh-yar",
+  "kind": "rules",
+  "version": 1,
+  "exportedAt": "2026-10-17T14:10:14.446Z",
+  "rules": [
+    {
+      "id": "rule-verb-start",
+      "key": "verbStart",
+      "type": "structural",
+      "title": "شروع با فعل کاری",
+      "desc": "هر ردیف با یک فعل روشن شروع شود؛ مثل پیاده‌سازی، رفع، بررسی، تست، مستندسازی یا هماهنگی.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "verbs": [
+          "پیاده‌سازی",
+          "توسعه",
+          "رفع",
+          "بررسی",
+          "تست",
+          "مستندسازی",
+          "هماهنگی",
+          "آماده‌سازی",
+          "پیکربندی",
+          "پیگیری",
+          "طراحی",
+          "ایجاد",
+          "به‌روزرسانی",
+          "اصلاح",
+          "تحلیل",
+          "جلسه",
+          "ارسال",
+          "دریافت",
+          "نصب",
+          "راه‌اندازی",
+          "مهاجرت",
+          "بازبینی",
+          "تدوین",
+          "تهیه",
+          "اجرا",
+          "برنامه‌ریزی",
+          "نگهداری",
+          "پشتیبانی",
+          "تکمیل",
+          "شروع",
+          "ادامه",
+          "ساخت",
+          "افزودن",
+          "حذف",
+          "ویرایش",
+          "انتقال",
+          "ذخیره",
+          "بارگذاری",
+          "کنترل",
+          "پایش",
+          "بهینه‌سازی",
+          "یکپارچه‌سازی",
+          "آموزش",
+          "پاسخ",
+          "تماس",
+          "مذاکره",
+          "برآورد",
+          "سنجش"
+        ]
+      }
+    },
+    {
+      "id": "rule-row-structure",
+      "key": "rowStructure",
+      "type": "structural",
+      "title": "ساختار ردیف گزارش",
+      "desc": "هر ردیف ترجیحاً فعل + موضوع + نتیجه یا وضعیت + عدد باشد. جزئیات وضعیت، درصد، ساعت و پروژه به‌صورت مرتب به ردیف اضافه می‌شود.",
+      "enabled": true,
+      "custom": false,
+      "config": {}
+    },
+    {
+      "id": "rule-persian-digits",
+      "key": "persianDigits",
+      "type": "structural",
+      "title": "اعداد فارسی",
+      "desc": "همه‌ی اعداد گزارش با ارقام فارسی نوشته شوند.",
+      "enabled": true,
+      "custom": false,
+      "config": {}
+    },
+    {
+      "id": "rule-hours-unit",
+      "key": "hoursUnit",
+      "type": "structural",
+      "title": "واحد ساعت",
+      "desc": "زمان صرف‌شده با واحد فارسی «ساعت» نمایش داده شود؛ مثل «۲٫۵ ساعت».",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "unit": "ساعت"
+      }
+    },
+    {
+      "id": "rule-percent-symbol",
+      "key": "percentSymbol",
+      "type": "structural",
+      "title": "نماد درصد فارسی",
+      "desc": "درصد پیشرفت با نماد فارسی «٪» نمایش داده شود؛ مثل «۷۰٪».",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "symbol": "٪"
+      }
+    },
+    {
+      "id": "rule-no-first-person",
+      "key": "noFirstPerson",
+      "type": "structural",
+      "title": "بدون ضمیر اول‌شخص",
+      "desc": "ضمیرهای اول‌شخص از متن گزارش حذف شوند تا لحن رسمی و بی‌طرف بماند.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "words": [
+          "من",
+          "ما",
+          "خودم",
+          "خودمان",
+          "اینجانب"
+        ]
+      }
+    },
+    {
+      "id": "rule-vague",
+      "key": "vagueWarnings",
+      "type": "structural",
+      "title": "هشدار عبارت‌های مبهم",
+      "desc": "عبارت‌های کلی مثل «در حال کار» یا «انجام شد» هشدار می‌گیرند تا نتیجه‌ی روشن‌تری نوشته شود.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "phrases": [
+          "در حال کار",
+          "کار شد",
+          "انجام شد",
+          "بررسی شد",
+          "ادامه کار",
+          "کارها",
+          "انجام کارها",
+          "پیگیری شد"
+        ]
+      }
+    },
+    {
+      "id": "rule-blockers",
+      "key": "blockersSection",
+      "type": "structural",
+      "title": "بخش جداگانه‌ی موانع",
+      "desc": "اگر مانعی وجود دارد، در بخش «موانع و نیازمند اقدام» نمایش داده شود.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "title": "موانع و نیازمند اقدام"
+      }
+    },
+    {
+      "id": "rule-future-tone",
+      "key": "futureTone",
+      "type": "structural",
+      "title": "لحن آینده برای برنامه‌ی فردا",
+      "desc": "موارد برنامه‌ی آینده با لحن آینده نوشته شوند؛ مثل «انجام خواهد شد».",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "suffix": "انجام خواهد شد."
+      }
+    },
+    {
+      "id": "rule-empty-fields",
+      "key": "emptyFields",
+      "type": "structural",
+      "title": "خروجی بدون شکستگی",
+      "desc": "فیلدهای خالی و بخش‌های بی‌محتوا در گزارش نمایش داده نشوند تا خروجی ناقص یا زشت نشود.",
+      "enabled": true,
+      "custom": false,
+      "config": {}
+    },
+    {
+      "id": "rule-admin-intro",
+      "key": "adminIntro",
+      "type": "structural",
+      "title": "مقدمه‌ی گزارش",
+      "desc": "در قالب گزارش کار اداری، یک مقدمه‌ی کوتاه درباره‌ی هدف و بازه‌ی گزارش بیاور.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "text": "این گزارش شامل فعالیت‌های انجام‌شده در روز {تاریخ} توسط {نویسنده} و نتایج پیگیری کارهاست."
+      }
+    },
+    {
+      "id": "rule-activity-groups",
+      "key": "activityGroups",
+      "type": "structural",
+      "title": "دسته‌بندی فعالیت‌ها",
+      "desc": "در قالب اداری، فعالیت‌ها بر اساس وضعیت (انجام‌شده، در حال انجام، مسدود و برنامه‌ی آینده) گروه‌بندی شوند.",
+      "enabled": true,
+      "custom": false,
+      "config": {}
+    },
+    {
+      "id": "rule-results-numbers",
+      "key": "resultsNumbers",
+      "type": "structural",
+      "title": "نتایج با عدد و آمار",
+      "desc": "در قالب اداری، بخش «نتایج و دستاوردها» شامل تعداد فعالیت‌ها، ساعت کار، پیشرفت و موانع باشد.",
+      "enabled": true,
+      "custom": false,
+      "config": {}
+    },
+    {
+      "id": "rule-challenge-solutions",
+      "key": "challengeSolutions",
+      "type": "structural",
+      "title": "چالش همراه راهکار",
+      "desc": "برای هر مانع، یک راهکار یا اقدام بعدی پیشنهاد شود و تسک مسدود بدون راهکار هشدار بگیرد.",
+      "enabled": true,
+      "custom": false,
+      "config": {}
+    },
+    {
+      "id": "rule-admin-conclusion",
+      "key": "adminConclusion",
+      "type": "structural",
+      "title": "جمع‌بندی و بازخورد",
+      "desc": "در قالب اداری، یک جمع‌بندی کوتاه از عملکرد و یک پیشنهاد بهبود بیاور.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "text": "",
+        "suggestion": "برای بهبود روند، دقت در ثبت اولیه‌ی اطلاعات و پیگیری منظم اقدامات پیشنهاد می‌شود."
+      }
+    },
+    {
+      "id": "rule-linguistic-admin-tone",
+      "key": "linguisticAdminTone",
+      "type": "linguistic",
+      "title": "لحن اداری و رسمی",
+      "desc": "در بازنویسی هوشمند، متن با لحن اداری، رسمی و قابل پیگیری نوشته شود.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "instruction": "متن را با لحن اداری، رسمی و قابل پیگیری بنویس؛ از زبان محاوره و جمله‌های کلی پرهیز کن."
+      }
+    },
+    {
+      "id": "rule-linguistic-evidence",
+      "key": "linguisticEvidence",
+      "type": "linguistic",
+      "title": "نتیجه با شاهد و عدد",
+      "desc": "در بازنویسی هوشمند، عدد، درصد یا ساعتِ موجود در متن حفظ شود و نتیجه با شاهد روشن بیان شود.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "instruction": "در نتایج، عدد، درصد یا ساعت را حفظ کن و در صورت امکان یک شاهد روشن برای نتیجه بیاور."
+      }
+    },
+    {
+      "id": "rule-linguistic-clarity",
+      "key": "linguisticClarity",
+      "type": "linguistic",
+      "title": "پرهیز از کلی‌گویی",
+      "desc": "در بازنویسی هوشمند، عبارت‌های مبهم با نتیجه یا اقدام مشخص جایگزین شوند.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "instruction": "عبارت‌های کلی مثل «کار شد» یا «بررسی شد» را با نتیجه یا اقدام مشخص جایگزین کن."
+      }
+    },
+    {
+      "id": "rule-linguistic-formal",
+      "key": "linguisticFormal",
+      "type": "linguistic",
+      "title": "لحن رسمی و کوتاه",
+      "desc": "در بازنویسی هوشمند، جمله‌ها رسمی، کوتاه و بدون تکرار بازنویسی شوند.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "instruction": "جمله‌ها را رسمی، کوتاه و بدون تکرار بنویس. از زبان محاوره و توضیح اضافه پرهیز کن."
+      }
+    },
+    {
+      "id": "rule-linguistic-result",
+      "key": "linguisticResult",
+      "type": "linguistic",
+      "title": "پایان با نتیجه‌ی روشن",
+      "desc": "در بازنویسی هوشمند، هر ردیف با نتیجه یا وضعیت روشن تمام شود.",
+      "enabled": true,
+      "custom": false,
+      "config": {
+        "instruction": "در پایان هر ردیف نتیجه یا وضعیت روشن را بیاور؛ اگر عدد یا پیشرفت وجود دارد، آن را حفظ کن."
+      }
+    }
+  ]
+}
